@@ -85,7 +85,7 @@ a {
             }
 
             & :last-child {
-                margin-right: 10px;
+              margin-right: 10px;
             }
           }
         }
@@ -101,6 +101,14 @@ a {
 
   main {
     section:first-child {
+      .images {
+        margin-top: 50px;
+        height: 450px;
+
+        img {
+          height: 450px;
+        }
+      }
       .intro {
         div {
           display: flex;
@@ -188,9 +196,8 @@ a {
       .cards {
         flex-wrap: wrap;
         flex-direction: row;
-        width: 100%;
+        max-width: 100%;
         gap: 40px;
-      
 
         .card {
           margin: 0px;
@@ -241,16 +248,27 @@ a {
 
         .findUs {
           h4 {
-            margin-top: 30px;
+            margin-top: -13px;
           }
           a {
             height: 45px;
             width: 150px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+
+            &:hover:after {
+              content: none;
+            }
           }
         }
 
         .followUs {
-          margin-top: -65px;
+          h4 {
+            margin-top: -13px;
+          }
         }
       }
     }
@@ -265,7 +283,7 @@ a {
       }
 
       div {
-        flex-direction: column;  
+        flex-direction: column;
       }
     }
   }

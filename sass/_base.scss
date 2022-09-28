@@ -12,6 +12,7 @@ $font: 'Uchen', serif;
 
 * {
   box-sizing: border-box;
+  margin: 0px;
 }
 
 h3 {
@@ -44,9 +45,13 @@ a {
     height: 2px;
     border-radius: 4px;
     background-color: #ffffff;
-    margin-top: 0.2em;
+    margin-top: -0.3em;
     margin-bottom: 0.875rem;
   }
+}
+
+body {
+  margin: 0%;
 }
 
 .wrapper {
@@ -58,6 +63,8 @@ a {
   //-------HEADER----------//
 
   header {
+    height: 100px;
+
     .headerMobile {
       background-color: #0d0803;
       width: 100%;
@@ -215,11 +222,7 @@ a {
       display: none;
     }
 
-    .hero {
-      max-height: 40vh;
-      object-fit: cover;
-      margin-top: 100px;
-    }
+    
   }
 
   //---------MAIN---------//
@@ -227,8 +230,24 @@ a {
   main {
     display: flex;
     flex-direction: column;
-
+    
     section:first-child {
+      // margin-top: 90%;
+      .images {
+        height: 300px;
+        position: relative;
+        img {
+          height: 300px;
+          position: absolute;
+          max-width: 100%;
+          object-fit: cover;
+          opacity: 0;
+          &:first-child {
+            opacity: 1;
+          }
+        }
+      }
+
       .intro {
         h3 {
           color: rgba(255, 255, 255, 0.85);
@@ -345,6 +364,7 @@ a {
           left: 50%;
           transform: translate(-50%, 0);
           white-space: nowrap;
+          margin-bottom: 10px;
         }
       }
 
@@ -375,7 +395,7 @@ a {
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             text-transform: none;
             position: absolute;
-            top: 4px;
+            top: -2px;
           }
 
           div {
@@ -528,6 +548,7 @@ a {
             gap: 8px;
             flex-direction: row;
             padding-bottom: 25px;
+            transition: all 0.3s ease-in-out;
 
             a {
               &:hover {
