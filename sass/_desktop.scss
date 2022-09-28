@@ -227,29 +227,22 @@ a {
 
   .wrapperFooter {
     footer {
-      padding-bottom: 30px;
+      height: 445px;
 
       picture {
         img {
-          margin-top: -45px;
-          margin-bottom: -25px;
-          margin-left: 47%;
+          margin-top: -100px;
         }
       }
 
       section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 65px;
+        gap: 4em;
 
         & article {
-          min-width: 25%;
+          min-width: 20%;
         }
 
         .findUs {
-          h4 {
-            margin-top: -13px;
-          }
           a {
             height: 45px;
             width: 150px;
@@ -262,12 +255,6 @@ a {
             &:hover:after {
               content: none;
             }
-          }
-        }
-
-        .followUs {
-          h4 {
-            margin-top: -13px;
           }
         }
       }

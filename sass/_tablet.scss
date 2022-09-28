@@ -29,15 +29,14 @@ p {
 }
 
 .wrapper {
-    header {
-
+  header {
     .active {
       height: 70vh;
       width: 90%;
       margin-left: 5%;
-      
+
       ul {
-          width:100%;
+        width: 100%;
       }
     }
   }
@@ -127,31 +126,28 @@ p {
     footer {
       margin: 0px 61px 30px 61px;
       width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       picture {
         img {
           margin-top: -30px;
           margin-bottom: -25px;
+          margin-left: 0%;
         }
       }
 
       section {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 65px;
+        align-items: baseline;
+        gap: 30px;
 
         & article {
-           min-width: 30%;
-        }
-
-        .findUs {
-            h4 {
-                    margin-top: -23px;
-            }
-        }
-
-        .followUs {
-          margin-top: -65px;
+          min-width: 30%;
+          height: 200px;
         }
       }
     }
