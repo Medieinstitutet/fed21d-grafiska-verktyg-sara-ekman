@@ -27,6 +27,7 @@ button {
 p {
   font-size: 1.3rem;
 }
+
 a {
   font-size: 1.5rem;
 }
@@ -215,6 +216,7 @@ a {
               height: 230px;
             }
           }
+
           &.right {
             margin-right: 0px;
           }
@@ -259,6 +261,7 @@ a {
         }
       }
     }
+
     .cookies {
       flex-direction: row;
       justify-content: center;
