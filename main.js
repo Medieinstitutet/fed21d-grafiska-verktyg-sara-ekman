@@ -10,8 +10,6 @@ gsap.to('#letter_s', {
 
 const tween = gsap.to("#myLogo", { duration: 0.1, x: 6, repeat: -1, yoyo: true, ease: "sine.inOut", paused: true });
 
-const tweenTwo = gsap.to("#menuHover", { duration: 0.1, x: 6, repeat: -1, yoyo: true, ease: "sine.inOut", paused: true });
-
 const tweenThree = gsap.to("#myLogoLarge", { duration: 0.1, x: 6, repeat: -1, yoyo: true, ease: "sine.inOut", paused: true });
 
 document.getElementById('myLogo').addEventListener('mouseover', () => {
@@ -20,12 +18,7 @@ document.getElementById('myLogo').addEventListener('mouseover', () => {
 document.getElementById('myLogo').addEventListener('mouseleave', () => {
     tween.pause();
 });
-document.getElementById('menuHover').addEventListener('mouseover', () => {
-    tweenTwo.play();
-});
-document.getElementById('menuHover').addEventListener('mouseleave', () => {
-    tweenTwo.pause();
-});
+
 document.getElementById('myLogoLarge').addEventListener('mouseover', () => {
     tweenThree.play();
 });
