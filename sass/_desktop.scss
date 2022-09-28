@@ -1,27 +1,8 @@
-$yellow: #f2b705;
-$brown: #a67c52;
-$grey: #e1ded4;
-$light-bronze: #a04501;
-$dark-bronze: #6c1e00;
-$cardColor: hsla(22, 68%, 54%, 0.86);
-
-//rgba(217, 116, 57, 0.86)
-$font: 'Uchen', serif;
-
-* {
-  box-sizing: border-box;
-}
-
 h3 {
   font-size: 3rem;
 }
 h4 {
   font-size: 2rem;
-}
-
-h4,
-button {
-  text-transform: uppercase;
 }
 
 p {
