@@ -45,3 +45,24 @@ okBtn.addEventListener('click', () => {
 canBtn.addEventListener('click', () => {
     cookies.style.display = 'none';
 });
+
+let pointer = 0;
+const images = document.querySelectorAll('.images img');
+
+function rotateLogo(imgs = [], currentPointer = 0) {
+    let pointer = currentPointer;
+    if (imgs !== []) {
+        const current = pointer;
+        pointer += 1;
+        if (pointer === imgs.length) pointer = 0;
+        gsap.to(imgs[current], { duration: 1, autoAlpha: 0 });
+        gsap.to(imgs[pointer], { duration: 1, autoAlpha: 1 });
+    }
+    return pointer;
+}
+
+gsap.to({}, {
+    duration: 5, repeat: -1, onRepeat: () => {
+        pointer = rotateLogo(images, pointer);
+    }
+});
