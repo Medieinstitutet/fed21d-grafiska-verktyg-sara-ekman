@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sass/normalize.css">
+    <link rel="stylesheet" href="sass/_normalize.scss">
     <link rel="stylesheet" href="sass/style.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/imgs/LogoLarge.svg">
@@ -83,30 +83,33 @@
                     <span></span>
                 </div>
             </div>
-                <div class="menu" >
-                    <ul>
-                        <li><a href="index.html" class="menuLink">HEM</a>
-                        </li>
-                        <li><a href="index.html" class="menuLink">DRINKAR</a>
-                        </li>
-                        <li><a href="index.html" class="menuLink">VÅRA ÖL</a>
-                        </li>
-                        <li><a href="index.html" class="menuLink">OM OSS</a>
-                        </li>
-                        <li><a href="index.html" class="menuLink">HITTA OSS</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="menuLink">HEM</a>
+                    </li>
+                    <li><a href="index.html" class="menuLink">DRINKAR</a>
+                    </li>
+                    <li><a href="index.html" class="menuLink">VÅRA ÖL</a>
+                    </li>
+                    <li><a href="index.html" class="menuLink">OM OSS</a>
+                    </li>
+                    <li><a href="index.html" class="menuLink">HITTA OSS</a>
+                    </li>
+                </ul>
+            </div>
             <div class="headerDesktop">
-                <svg id="myLogoLarge" width="130" height="160" viewBox="0 0 148 119" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg id="myLogoLarge" width="130" height="160" viewBox="0 0 148 119" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g filter="url(#filter0_f_32_345)">
-                        <path d="M16.42 114V27.0631L45.155 39.7323L57.9831 27.0631L75.4293 39.7323L98.0068 27.0631V114H16.42Z"
+                        <path
+                            d="M16.42 114V27.0631L45.155 39.7323L57.9831 27.0631L75.4293 39.7323L98.0068 27.0631V114H16.42Z"
                             fill="#F2B705" />
-                        <path d="M16.42 114V27.0631L45.155 39.7323L57.9831 27.0631L75.4293 39.7323L98.0068 27.0631V114H16.42Z"
+                        <path
+                            d="M16.42 114V27.0631L45.155 39.7323L57.9831 27.0631L75.4293 39.7323L98.0068 27.0631V114H16.42Z"
                             stroke="black" />
                     </g>
-                    <path d="M71.8375 92.1566L62.6012 101.643L71.8374 108.758L84.1525 101.643L71.8375 92.1566Z" fill="white"
-                        stroke="black" />
+                    <path d="M71.8375 92.1566L62.6012 101.643L71.8374 108.758L84.1525 101.643L71.8375 92.1566Z"
+                        fill="white" stroke="black" />
                     <path d="M16.42 103.078L33.3531 88.6616L48.2337 103.078L33.3531 113.126L16.42 103.078Z" fill="white"
                         stroke="black" />
                     <g id='letter_s' filter="url(#filter1_d_32_345)">
@@ -126,11 +129,11 @@
                             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                             <feGaussianBlur stdDeviation="2" result="effect1_foregroundBlur_32_345" />
                         </filter>
-                        <filter id="filter1_d_32_345" x="36.5862" y="50.7961" width="39.5" height="58.875" filterUnits="userSpaceOnUse"
-                            color-interpolation-filters="sRGB">
+                        <filter id="filter1_d_32_345" x="36.5862" y="50.7961" width="39.5" height="58.875"
+                            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                             <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                                result="hardAlpha" />
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                             <feOffset dy="4" />
                             <feGaussianBlur stdDeviation="2" />
                             <feComposite in2="hardAlpha" operator="out" />
@@ -156,10 +159,13 @@
                     </ul>
                 </nav>
             </div>
-            <img class="hero" width="100%" src="./assets/imgs/Bar.jpg" alt="Bar">
         </header>
         <main>
             <section>
+                <div class="images">
+                    <img class="hero" width="100%" src="./assets/imgs/Bar.jpg" alt="Bar">
+                    <img class="hero" width="100%" src="./assets/imgs/hard-rock-bar.jpg" alt="Bar">
+                </div>
                 <article class="intro">
                     <h3>Helt enkelt en unik<br> upplevelse!</h3>
                     <div>
@@ -192,22 +198,22 @@
             <section>
                 <article class="bannerHeader">
                     <picture>
-                        <source media="(max-width: 500px)" srcset="./assets/mobile-Imgs/Vector1.png">
-                        <source media="(max-width: 1195px)" srcset="./assets/tablet-imgs/Vector1.png">
-                        <source media="(max-width: 3000px)" srcset="./assets/desktop-imgs/Vector1.png">
+                        <source media="(max-width: 500px)" srcset="./assets/mobile/Vector1.png">
+                        <source media="(max-width: 1195px)" srcset="./assets/tablet/Vector1.png">
+                        <source media="(max-width: 3000px)" srcset="./assets/desktop/Vector1.png">
 
-                        <img src="./assets/mobile-Imgs/Vector1.png" alt="Banner header">
+                        <img src="./assets/mobile/Vector1.png" alt="Banner header">
                     </picture>
                     <h4>Några av våra drinkar</h4>
                 </article>
                 <section class="cards">
                     <article class="card left">
                         <picture>
-                            <source media="(max-width: 500px)" srcset="./assets/mobile-Imgs/flagName-left.png">
-                            <source media="(max-width: 1195px)" srcset="./assets/tablet-imgs/flagName-Left.png">
-                            <source media="(max-width: 3000px)" srcset="./assets/desktop-imgs/flagName-Left.png">
+                            <source media="(max-width: 500px)" srcset="./assets/mobile/flagName-left.png">
+                            <source media="(max-width: 1195px)" srcset="./assets/tablet/flagName-Left.png">
+                            <source media="(max-width: 3000px)" srcset="./assets/desktop/flagName-Left.png">
 
-                            <img src="./assets/mobile-Imgs/flagName-left.png" alt="flagName">
+                            <img src="./assets/mobile/flagName-left.png" alt="flagName">
                         </picture>
                         <span>MANHATTAN</span>
                         <div>
@@ -220,11 +226,11 @@
 
                     <article class="card right">
                         <picture>
-                            <source media="(max-width: 500px)" srcset="./assets/mobile-Imgs/flagName-right.png">
-                            <source media="(max-width: 1195px)" srcset="./assets/tablet-imgs/flagName-right.png">
-                            <source media="(max-width: 3000px)" srcset="./assets/desktop-imgs/flagName-right.png">
+                            <source media="(max-width: 500px)" srcset="./assets/mobile/flagName-right.png">
+                            <source media="(max-width: 1195px)" srcset="./assets/tablet/flagName-right.png">
+                            <source media="(max-width: 3000px)" srcset="./assets/desktop/flagName-right.png">
 
-                            <img src="./assets/mobile-Imgs/flagName-right.png.png" alt="flagName">
+                            <img src="./assets/mobile/flagName-right.png.png" alt="flagName">
                         </picture>
                         <span>MOSCOW MULE</span>
                         <div>
@@ -236,11 +242,11 @@
                     </article>
                     <article class="card left">
                         <picture>
-                            <source media="(max-width: 500px)" srcset="./assets/mobile-Imgs/flagName-left.png">
-                            <source media="(max-width: 1195px)" srcset="./assets/tablet-imgs/flagName-Left.png">
-                            <source media="(max-width: 3000px)" srcset="./assets/desktop-imgs/flagName-Left.png">
+                            <source media="(max-width: 500px)" srcset="./assets/mobile/flagName-left.png">
+                            <source media="(max-width: 1195px)" srcset="./assets/tablet/flagName-Left.png">
+                            <source media="(max-width: 3000px)" srcset="./assets/desktop/flagName-Left.png">
 
-                            <img src="./assets/mobile-Imgs/flagName-left.png" alt="flagName">
+                            <img src="./assets/mobile/flagName-left.png" alt="flagName">
                         </picture>
                         <span>MARGARITA</span>
                         <div>
