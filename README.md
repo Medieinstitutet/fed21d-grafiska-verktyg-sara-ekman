@@ -8,3 +8,5 @@ Mall-repo för kursen `Grafiska Verktyg`
 #### Jag valde medvetet lite höstrelaterade färger som speglar en barmiljö med träinslag och självklart öppen och härlig eldstad.
 #### Typsnittet samt form på knapparna och menyn valde jag för att det passar ihop med den lite lösa och lediga barmiljön som kan vara lite mer rustik och gammaldags.
 
+### [Link to github pages](https://medieinstitutet.github.io/fed21d-grafiska-verktyg-sara-ekman/)
+
