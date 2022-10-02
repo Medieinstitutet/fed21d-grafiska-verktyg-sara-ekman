@@ -73,6 +73,7 @@ p {
 
           span {
             font-size: 1rem;
+            top: 3px;
           }
 
           div {
@@ -114,11 +115,14 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
-        gap: 30px;
+        gap: 30px; 
 
         & article {
           min-width: 30%;
           height: 200px;
+        }
+        .followUs {
+          margin-top: -70px;
         }
       }
     }
