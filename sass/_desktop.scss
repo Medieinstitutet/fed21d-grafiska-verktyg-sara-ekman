@@ -1,0 +1,261 @@
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+a {
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  header {
+    .headerMobile {
+      display: none;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .headerDesktop {
+      display: block;
+      z-index: 1001;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #a04501;
+      height: 115px;
+
+      svg {
+        margin-top: -15px;
+      }
+
+      nav {
+        width: 100%;
+
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          gap: 10px;
+          flex-direction: row;
+          list-style: none;
+          li {
+            a {
+              font-size: 1.5rem;
+              padding: 12px;
+              color: $grey;
+              transition: 0.3s ease;
+
+              &:hover {
+                transition: 0.3s ease;
+                text-shadow: 1px 1px 4px black;
+                background-color: $dark-bronze;
+                border-radius: 2px;
+              }
+
+              &:hover:after {
+                content: none;
+              }
+            }
+
+            & :last-child {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .hero {
+      margin-top: 30px;
+    }
+  }
+
+  //---------MAIN---------//
+
+  main {
+    section:first-child {
+      .images {
+        margin-top: 50px;
+        height: 450px;
+
+        img {
+          height: 450px;
+        }
+      }
+      .intro {
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 30px;
+          margin-bottom: 40px;
+          flex-direction: row-reverse;
+
+          p {
+            text-align: center;
+            max-width: 420px;
+            margin: 41px 0px 0px 30px;
+            line-height: 2.4rem;
+
+            a {
+              width: 400px;
+            }
+          }
+
+          img {
+            display: block;
+            max-height: 400px;
+            max-width: 654px;
+            rotate: 9deg;
+            margin: 0px;
+          }
+        }
+      }
+    }
+
+    .newsletter {
+      order: 3;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row-reverse;
+      margin-bottom: 63px;
+      margin-top: 63px;
+
+      article:nth-child(1) {
+        display: block;
+        z-index: 2;
+        position: relative;
+
+        img {
+          max-height: 283px;
+          width: 550px;
+          rotate: -4.5deg;
+          margin: 0px;
+          margin-top: 10px;
+          position: relative;
+          right: 35px;
+          top: 4px;
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 14px;
+        }
+      }
+
+      article:nth-child(2) {
+        justify-content: center;
+        align-items: center;
+        max-width: 50%;
+        rotate: 4.5deg;
+        z-index: 1;
+        min-height: 280px;
+        border-top-right-radius: 26px;
+        border-bottom-right-radius: 10px;
+
+        h4,
+        p,
+        input,
+        button {
+          rotate: 356deg;
+        }
+
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    section:nth-child(3) {
+      .cards {
+        flex-wrap: wrap;
+        flex-direction: row;
+        max-width: 100%;
+        gap: 40px;
+
+        .card {
+          margin: 0px;
+          min-height: 332px;
+          max-width: 520px;
+
+          span {
+            font-size: 1.5rem;
+            top: 12px;
+          }
+
+          div {
+            img {
+              width: 300px;
+              height: 230px;
+            }
+          }
+
+          &.right {
+            margin-right: 0px;
+          }
+        }
+      }
+    }
+  }
+
+  //---------FOOTER---------//
+
+  .wrapperFooter {
+    footer {
+      height: 445px;
+
+      picture {
+        img {
+          margin-top: -100px;
+        }
+      }
+
+      section {
+        gap: 4em;
+
+        & article {
+          min-width: 20%;
+        }
+
+        .findUs {
+          a {
+            height: 45px;
+            width: 150px;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+
+            &:hover:after {
+              content: none;
+            }
+          }
+        }
+      }
+    }
+
+    .cookies {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        text-align: start;
+        max-width: 70%;
+      }
+
+      div {
+        flex-direction: column;
+      }
+    }
+  }
+}
